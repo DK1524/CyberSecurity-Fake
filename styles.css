@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #121212;
+    color: #f1f1f1;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: #1a1a1a;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav .logo {
+    font-size: 2.5em;
+    color: #00ff00;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+
+nav ul li a {
+    color: #f1f1f1;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+nav ul li a:hover {
+    color: #00ff00;
+    transition: color 0.3s ease;
+}
+
+.hero {
+    padding: 120px 20px;
+    text-align: center;
+    background: linear-gradient(to right, #000000, #333333);
+    color: #00ff00;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    animation: fadeIn 1.5s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(50px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+section {
+    padding: 50px 20px;
+    text-align: center;
+}.sobre-nos {
+    padding: 60px 0;
+    background-color: #252525;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #00ff00;
+}
+
+.about-text {
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 20px auto 40px;
+    color: #00ff00;
+}.team {
+    text-align: center; /* Centraliza o texto */
+    margin-top: 40px; /* Espaço acima da seção */
+    display: flex; /* Usar flexbox */
+    flex-direction: column; /* Alinha os itens na coluna */
+    align-items: center; /* Centraliza os itens horizontalmente */
+}
+
+.team-list {
+    list-style: none; /* Remove as bolinhas da lista */
+    padding: 0; /* Remove o padding padrão */
+}
+
+.team-list li {
+    font-size: 18px;
+    color: #00ff00;
+    margin-bottom: 10px; /* Espaço entre os itens da lista */
+}
+
+
+#services {
+    background-color: #252525;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    animation: fadeIn 2s ease;
+}
+
+.service-box {
+    max-width: 300px;
+    background-color: #333;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.service-box:hover {
+    transform: scale(1.05);
+}
+
+#team {
+    background-color: #1f1f1f;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.team-box {
+    max-width: 250px;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 8px;
+    margin: 10px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.team-box:hover {
+    transform: scale(1.05);
+}
+
+#contact {
+    background-color: #252525;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: auto;
+}
+
+form input, form textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form input:focus, form textarea:focus {
+    outline: 2px solid #00ff00;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #00ff00;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #009900;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #1a1a1a;
+}
+
+@keyframes slideUp {
+    from { transform: translateY(100px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+section {
+    animation: slideUp 1s ease;
+}
